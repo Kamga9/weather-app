@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="./index.css" />
+    <link rel="stylesheet" href="./pages/header.css">
+    <link rel="stylesheet" href="./pages/footer.css">
+
+    <!--referenz auf das Datei styles.css-->
+    <title>www.kbe-rasdey.de</title>
+    <!-- <script type="module" src="./scripts/rezeptliste.js"></script> -->
+  </head>
+
+  <body>
+    <header>
+      <script type="module" src="./scripts/header.js"></script>
+      <a href="./index.html" class="logo">KBE</a>
+      <div class="search-bar">
+        <input type="text" placeholder="Rezepte durchsuchen" />
+      </div>
+      <ul class="navbar">
+        <li><a href="./pages/kategorieliste.html">Kategorie </a></li>
+        <li><a href="./pages/rezeptliste.html" onclick="sessionStorage.setItem('category', 'all')">Rezepte </a></li>
+      </ul>
+
+      <ul class="bouton" id="userProfileButton">
+      </ul>
+      <ul id="profilePictButton">
+
+      </ul>
+    </header>
+
+    <section class="image-container">
+      <img class="image1" src="./images/image1.jpg" />
+      <div class="inhalt">
+        <h1>Kochbuch und Einkaufsliste</h1>
+        <h2>Rezept durchsuchen und Einkaufsliste erstellen.</h2>
+      </div>
+    </section>
+
+    <div class="Space"></div>
+
+    <section class="Kategorie-Section">
+      <a href="./pages/kategorieliste.html" style="text-decoration: none;"><h3>Nach Kategorie erkunden</h3></a>
+      <p>
+        Hier finden Sie eine vielzahl von Rezepten, die nach Kategorien sortiert
+        sind.
+      </p>
+
+      <div class="Kategorie-container">
+        <div class="Kategorie">
+          <a href="./pages/rezeptliste.html" onclick="sessionStorage.setItem('category', 'indisch')">
+            <img src="./images/Indisch.jpg" alt="Indisch" /> <br>
+          </a>
+          <p1>Indisch</p1>
+        </div>
+        <div class="Kategorie">
+          <a href="./pages/rezeptliste.html" onclick="sessionStorage.setItem('category', 'pasta')">
+            <img src="./images/Pasta.jpg" alt="Pasta" /><br>
+          </a>
+          <p1>Pasta</p1>
+        </div>
+        <div class="Kategorie">
+          <a href="./pages/rezeptliste.html" onclick="sessionStorage.setItem('category', 'vegan')">
+            <img src="./images/veganes_gericht.jpg" alt="Veganes Gericht" /><br>
+          </a>
+          <p1>Vegan</p1>
+        </div>
+        <div class="Kategorie">
+          <a href="./pages/rezeptliste.html" onclick="sessionStorage.setItem('category', 'nachtisch')"><img src="./images/Nachtisch.jpg" alt="Nachtisch" /><br></a>
+          <p1>Nachtisch</p1>
+        </div>
+        <div class="Kategorie">
+          <a href="./pages/rezeptliste.html" onclick="sessionStorage.setItem('category', 'schnellkoch')">
+            <img src="./images/Schnellkoch.jpg" alt="Schnellkoch" /><br>
+          </a>
+          <p1>Schnellkoch</p1>
+        </div>
+        <div class="Kategorie">
+          <a href="./pages/rezeptliste.html" onclick="sessionStorage.setItem('category', 'kochanfänger')">
+            <img src="./images/Kochanfänger.jpg" alt="Kochanfänger" /><br>
+          </a>
+          <p1>Kochanfänger</p1>
+        </div>
+
+        <div class="scroll-arrow">
+          <button>></button>
+        </div>
+      </div>
+    </section>
+
+    <div class="Space"></div>
+
+    <section class="beliebte-Rezepte-Section">
+      <h4>Die Beliebteste</h4>
+      <p2>Probieren Sie unsere beliebtesten Rezepte </p2>
+
+      <div class="Space"></div>
+
+      <div class="Rezepte-container">
+        <div class="Rezept">
+          <img src="./images/Oreo Keks.jpg" alt="Oreo Keks" />
+          <h5>Oreo Keks</h5>
+        </div>
+        <div class="Rezept">
+          <img src="./images/ErdbeerPfannkuchen.jpg" alt="Erdbeer-Pfannkuchen" />
+          <h5>Erdbeer-Pfannkuchen</h5>
+        </div>
+        <div class="Rezept">
+          <img src="./images/15-minuten Lo mein.jpg" alt="15-minuten Lo mein" />
+          <h5>15-minuten Lo mein</h5>
+        </div>
+      </div>
+    </section>
+
+    <div class="Space"></div>
+
+    <footer class="footer-container">
+      <div class="footer-section">
+        <h3>Kochbuch und Einkaufsliste</h3>
+        <ul>
+          <li><a href="#">Über uns</a></li>
+          <li><a href="#">Rezepte Index</a></li>
+          <li><a href="#">Kontakt</a></li>
+        </ul>
+      </div>
+      <div class="spaceFooter"></div>
+      <div class="footer-social">
+        <div class="social-icons">
+          <a href="#"><img src="./images/facebook.png" alt="Facebook" /></a>
+          <a href="#"><img src="./images/Instagram.png" alt="Instagram" /></a>
+          <a href="#"><img src="./images/Youtube.png" alt="YouTube" /></a>
+          <!-- <a href="#"><img src="images/Linkedin.png" alt="Linkedin"></a> -->
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
